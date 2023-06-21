@@ -2,10 +2,18 @@
 
 {% block content %}
 
+<!-- <img src="{{ url_for('static', filename='images/redpepper.png') }}">    -->
 
-    <h1>index.html表示してます</h1>
-    {{ insert_test }}<br>
-    {{ dict_test.insert_something1 }}
+<h1>index.html表示してます</h1>
+{{ insert_test }}<br>
+{{ dict_test.insert_something1 }}
+
+<h1>for test</h1>
+<ul>
+    {% for title in dict_test.test_titles %}
+        <li>{{ title }}</li>
+    {% endfor %}
+</ul>
 
 
 

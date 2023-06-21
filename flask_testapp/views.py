@@ -8,5 +8,6 @@ def index():
     my_dict = {
         'insert_something1': 'views.pyのinsert_something1部分です。',
         'insert_something2': 'views.pyのinsert_something2部分です。',
+        'test_titles': ['aaa', 'bbb', 'ccc']
     }
     return render_template('pages/index.html', insert_test=data, dict_test=my_dict)
